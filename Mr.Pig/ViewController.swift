@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var cameraNode: SCNNode!
     var cameraFollowNode: SCNNode!
     var lightFollowNode: SCNNode!
+    var trafficNode: SCNNode!
+    
     
     
 
@@ -54,6 +56,8 @@ class ViewController: UIViewController {
         cameraFollowNode = gameScene.rootNode.childNode(withName: "FollowCamera", recursively: true)!
         
         lightFollowNode = gameScene.rootNode.childNode(withName: "FollowLight", recursively: true)!
+        
+        trafficNode = gameScene.rootNode.childNode(withName: "Traffic", recursively: true)!
         
     }
     
