@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     var gameScene: SCNScene!
     var splashScene: SCNScene!
     var scnView: SCNView!
+    var pigNode: SCNNode!
+    var cameraNode: SCNNode!
+    var cameraFollowNode: SCNNode!
+    var lightFollowNode: SCNNode!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +47,13 @@ class ViewController: UIViewController {
     }
     
     func setupNodes() {
+        pigNode = gameScene.rootNode.childNode(withName: "MyPig", recursively: true)!
+        cameraNode = gameScene.rootNode.childNode(withName: "camera", recursively: true)!
+        cameraNode.addChildNode(game.hudNode)
+        
+        cameraFollowNode = gameScene.rootNode.childNode(withName: "FollowCamera", recursively: true)!
+        
+        lightFollowNode = gameScene.rootNode.childNode(withName: "FollowLight", recursively: true)!
         
     }
     
