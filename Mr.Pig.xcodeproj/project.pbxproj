@@ -10,10 +10,14 @@
 		C54644DF1DAFBEAF001B3005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54644DE1DAFBEAF001B3005 /* AppDelegate.swift */; };
 		C54644E11DAFBEAF001B3005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54644E01DAFBEAF001B3005 /* ViewController.swift */; };
 		C54644E41DAFBEAF001B3005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54644E21DAFBEAF001B3005 /* Main.storyboard */; };
-		C54644E61DAFBEAF001B3005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54644E51DAFBEAF001B3005 /* Assets.xcassets */; };
 		C54644E91DAFBEAF001B3005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54644E71DAFBEAF001B3005 /* LaunchScreen.storyboard */; };
 		C54644F41DAFBEB0001B3005 /* Mr_PigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54644F31DAFBEB0001B3005 /* Mr_PigTests.swift */; };
 		C54644FF1DAFBEB0001B3005 /* Mr_PigUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54644FE1DAFBEB0001B3005 /* Mr_PigUITests.swift */; };
+		C54645101DAFC07F001B3005 /* GameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546450D1DAFC07F001B3005 /* GameHelper.swift */; };
+		C54645111DAFC07F001B3005 /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546450E1DAFC07F001B3005 /* GameUtils.swift */; };
+		C54645121DAFC07F001B3005 /* SCNAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546450F1DAFC07F001B3005 /* SCNAction+Extensions.swift */; };
+		C54645141DAFC089001B3005 /* MrPig.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C54645131DAFC089001B3005 /* MrPig.scnassets */; };
+		C54645161DAFC0D1001B3005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54645151DAFC0D1001B3005 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		C54644DE1DAFBEAF001B3005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54644E01DAFBEAF001B3005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C54644E31DAFBEAF001B3005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C54644E51DAFBEAF001B3005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54644E81DAFBEAF001B3005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C54644EA1DAFBEAF001B3005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C54644EF1DAFBEAF001B3005 /* Mr.PigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mr.PigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +50,11 @@
 		C54644FA1DAFBEB0001B3005 /* Mr.PigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mr.PigUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54644FE1DAFBEB0001B3005 /* Mr_PigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mr_PigUITests.swift; sourceTree = "<group>"; };
 		C54645001DAFBEB0001B3005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C546450D1DAFC07F001B3005 /* GameHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHelper.swift; sourceTree = "<group>"; };
+		C546450E1DAFC07F001B3005 /* GameUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
+		C546450F1DAFC07F001B3005 /* SCNAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNAction+Extensions.swift"; sourceTree = "<group>"; };
+		C54645131DAFC089001B3005 /* MrPig.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = MrPig.scnassets; sourceTree = "<group>"; };
+		C54645151DAFC0D1001B3005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +105,12 @@
 		C54644DD1DAFBEAE001B3005 /* Mr.Pig */ = {
 			isa = PBXGroup;
 			children = (
+				C54645131DAFC089001B3005 /* MrPig.scnassets */,
+				C546450C1DAFC07F001B3005 /* GameUtils */,
 				C54644DE1DAFBEAF001B3005 /* AppDelegate.swift */,
 				C54644E01DAFBEAF001B3005 /* ViewController.swift */,
+				C54645151DAFC0D1001B3005 /* Assets.xcassets */,
 				C54644E21DAFBEAF001B3005 /* Main.storyboard */,
-				C54644E51DAFBEAF001B3005 /* Assets.xcassets */,
 				C54644E71DAFBEAF001B3005 /* LaunchScreen.storyboard */,
 				C54644EA1DAFBEAF001B3005 /* Info.plist */,
 			);
@@ -123,6 +133,16 @@
 				C54645001DAFBEB0001B3005 /* Info.plist */,
 			);
 			path = Mr.PigUITests;
+			sourceTree = "<group>";
+		};
+		C546450C1DAFC07F001B3005 /* GameUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C546450D1DAFC07F001B3005 /* GameHelper.swift */,
+				C546450E1DAFC07F001B3005 /* GameUtils.swift */,
+				C546450F1DAFC07F001B3005 /* SCNAction+Extensions.swift */,
+			);
+			path = GameUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54644E91DAFBEAF001B3005 /* LaunchScreen.storyboard in Resources */,
-				C54644E61DAFBEAF001B3005 /* Assets.xcassets in Resources */,
 				C54644E41DAFBEAF001B3005 /* Main.storyboard in Resources */,
+				C54645161DAFC0D1001B3005 /* Assets.xcassets in Resources */,
+				C54645141DAFC089001B3005 /* MrPig.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54644E11DAFBEAF001B3005 /* ViewController.swift in Sources */,
+				C54645121DAFC07F001B3005 /* SCNAction+Extensions.swift in Sources */,
+				C54645111DAFC07F001B3005 /* GameUtils.swift in Sources */,
 				C54644DF1DAFBEAF001B3005 /* AppDelegate.swift in Sources */,
+				C54645101DAFC07F001B3005 /* GameHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
